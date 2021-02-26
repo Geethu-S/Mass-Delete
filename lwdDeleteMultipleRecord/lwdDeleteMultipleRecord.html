@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Deleting Multiple Contact Records Using Checkbox in LWC" icon-name="custom:custom14">
+                    
+        <lightning-datatable  data={wireProject__c.data}  columns={columns} key-field="Id"  onrowselection={getSelectedIdAction}  > </lightning-datatable>
+ 
+        <div slot="footer"> 
+            <lightning-button title="Delete" label="Delete" size="small" variant="brand" icon-name="utility:delete" icon-position="right" onclick={deleteProjectRowAction}></lightning-button>
+        </div>
+     
+    </lightning-card>
+</template>
